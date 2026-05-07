@@ -1,0 +1,23 @@
+{
+  "name": "lightchain-crashout-founder-pass",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crash Out Founder Pass smart contract starter for Lightchain.ai EVM deployment.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "verify:rpc": "hardhat run scripts/verify-rpc.cjs --network lightchainMainnet",
+    "deploy:local": "hardhat run scripts/deploy.cjs --network localhost",
+    "deploy:lightchain": "hardhat run scripts/deploy.cjs --network lightchainMainnet",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.26.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
